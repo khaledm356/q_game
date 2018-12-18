@@ -1,0 +1,6 @@
+<h1>Home Page</h1>
+<p>
+  <% unless @question.nil? %>
+    <%= button_to "Start the game", "/games/answer/#{@question.id}", :method => :get %>
+  <% end %>
+</p>

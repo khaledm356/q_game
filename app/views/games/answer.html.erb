@@ -1,0 +1,8 @@
+<h1>
+  <%= @question.title %>
+</h1>
+  <%= form_with model: @question, url: "/games/check_answer/#{@question.id}", method: :put do |f| %>
+    <%= f.label :answer %>
+    <%= f.select :answer, [["Yes", true], ["No", false]], :include_blank => true %>
+    <%= f.submit("Submit", class: 'btn btn-success') %>
+  <% end %>
