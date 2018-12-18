@@ -7,8 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-# puts ">> Adding Game "
-# game =  Game.find_or_initialize_by(name: "game1")
+puts ">> Adding Game "
+game =  Game.find_or_initialize_by(name: "game1")
 puts ">> Adding Question "
 game = Game.first
   i = 1

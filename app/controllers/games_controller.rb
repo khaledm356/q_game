@@ -15,7 +15,6 @@ class GamesController < ApplicationController
     elsif @ids.count > 0
       redirect_to "/games/answer/#{@ids.sample}"
     else
-      puts "****************************************"
       redirect_to root_path, :flash => { :notice => "You have finished the quesiton of this game" }
     end
   end
